@@ -1,0 +1,7 @@
+project:
+  name: java-hello
+services:
+  - hostname: app
+    type: java@17
+    buildFromGit: https://github.com/fxck/java-hello-world
+    enableSubdomainAccess: true
