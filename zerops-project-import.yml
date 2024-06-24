@@ -6,7 +6,7 @@ project:
 services:
   - hostname: app
     type: java@17
-    buildFromGit: https://github.com/fxck/java-hello-world
+    buildFromGit: https://github.com/zeropsio/recipe-java
     enableSubdomainAccess: true
 
   - hostname: db
