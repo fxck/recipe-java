@@ -1,7 +1,14 @@
 project:
-  name: java-hello
+  name: recipe-java
+  tags:
+    - zerops-recipe
+
 services:
   - hostname: app
     type: java@17
     buildFromGit: https://github.com/fxck/java-hello-world
     enableSubdomainAccess: true
+
+  - hostname: db
+    type: postgres@16
+    mode: NON_HA

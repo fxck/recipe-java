@@ -5,10 +5,10 @@ zerops:
       buildCommands:
         - ./mvnw clean install
       deployFiles:
-        - target/my-java-app-1.0.0.jar
+        - target/recipe-1.0.0.jar
     run:
       base: java@17
       ports:
         - port: 8080
           httpSupport: true
-      start: java -jar target/my-java-app-1.0.0.jar
+      start: java -jar target/recipe-1.0.0.jar
